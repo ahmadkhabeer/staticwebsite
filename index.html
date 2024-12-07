@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أكاديمية المنارة | الدورات التدريبية</title>
+    <meta
+      name="description"
+      content="تجربة تعليمية ممتعة مع أفضل خبراء التعليم"
+    />
+    <meta name="keywords" content="دورة, لغة انجليزية, ICDL" />
+    <link rel="canonical" href="https://www.elmanara.net/courses.html" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="أكاديمية المنارة | الدورات التدريبية" />
+    <meta
+      property="og:description"
+      content="تجربة تعليمية ممتعة مع أفضل خبراء التعليم"
+    />
+    <meta
+      property="og:image"
+      content="https://www.elmanara.net/assets/images/manara-logo.png"
+    />
+    <meta property="og:url" content="https://www.elmanara.net/courses.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/css/basic.css" />
+    <link rel="stylesheet" href="assets/css/cards.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/manara.ico" />
+
+    <style>
+      .top {
+        background-image: url("assets/images/BGs/courses.jpeg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header-container" class="header"></header>
+      <main id="top-container" class="top">
+        <h2 class="page-title">
+          <span>الدورات<br />التدريبية</span>
+          <span>دورات أكاديمية<br />المنارة التدريبية</span>
+        </h2>
+      </main>
+      <div class="c-filter">
+        <button class="f-button all" onclick="showAllSections(this)"><span>الجميع</span></button>
+        <button class="f-button lang" onclick="displaySection(this, 'lang')"><span>اللغات الأجنبية</span></button>
+        <button class="f-button computer" onclick="displaySection(this, 'cs')"><span>علوم الحاسب الآلي</span></button>
+      </div>
+      <section id="lang" class="card-section section">
+        <h3 class="section-title">اللغات الاجنبية</h3>
+        <div id="lang-crds" class="cards"></div>
+      </section>
+      <section id="cs" class="card-section section">
+        <h3 class="section-title">علوم الحاسب الآلي</h3>
+        <div id="cs-crds" class="cards"></div>
+      </section>
+      <footer id="footer-container" class="footer"></footer>
+    </div>
+
+    <!-- Header template -->
+    <template id="header-template"></template>
+
+    <!-- Language cards -->
+    <template id="en-crd-template"></template>
+    <template id="ielts-crd-template"></template>
+    <!-- <template id="ibt-crd-template"></template> -->
+    <template id="du-crd-template"></template>
+    <template id="en-kids-crd-template"></template>
+    <template id="fr-crd-template"></template>
+
+    <!-- Computer Science templates -->
+    <template id="icdl-crd-template"></template>
+    <template id="ph-crd-template"></template>
+    <template id="il-crd-template"></template>
+    <template id="cad-crd-template"></template>
+    <template id="fe-crd-template"></template>
+    <template id="py-crd-template"></template>
+    <template id="dj-crd-template"></template>
+    <template id="pfa-crd-template"></template>    
+
+    <!-- Footer template -->
+    <template id="footer-template"></template>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/page.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/card.js" defer></script>
+  </body>
+</html>

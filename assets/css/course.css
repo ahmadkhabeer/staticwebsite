@@ -1,0 +1,451 @@
+.course-header {
+    margin-right: auto;
+    width: 100%;
+    background: rgba(0, 89, 140, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.4rem 0;
+}
+
+.course-header .course-title span {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.register {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.register a, .share button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.register a {
+    height: 4rem;
+    padding: 2rem 4rem;
+    color: #0b0b0b;
+    background-color: rgba(189, 234, 9, 1);
+}
+
+.register a:active {
+    background-color: rgba(189, 234, 9, 0.9);
+}
+
+.c-features {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1.6rem;
+    padding: 4rem;
+}
+
+.c-features li {
+    padding: 0.8rem 4rem 0.8rem 1.6rem;
+    border: 1px solid #007DC5;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 15%;
+    font-size: 1.4rem;
+    color: #007DC5;
+}
+
+.c-features .level {
+    background-image: url("../images/SVGs/beginner.svg");
+    background-position: 80% 50%;
+    background-size: 20%;
+    padding-right: 5rem;
+}
+
+.c-features .hours {
+    background-image: url("../images/SVGs/clock.svg");
+    background-position: 83% 50%;
+    background-size: 20%;
+    padding-right: 5rem;
+}
+
+.c-features .projects {
+    background-image: url("../images/SVGs/code.svg");
+    padding-right: 6rem;
+}
+
+.c-features .certification {
+    background-image: url("../images/SVGs/certification.svg");
+    padding-right: 6rem;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "right"
+    "left"
+    "instructor"
+    "share";
+    grid-gap: 0;
+    padding: 2rem 3rem;
+}
+
+.desc {
+    grid-area: desc;
+}
+
+.prerequisites {
+    grid-area: prerequisites;
+}
+
+.content {
+    grid-area: content;
+}
+
+.features {
+    grid-area: features;
+}
+
+.Jobs {
+    grid-area: Jobs;
+}
+
+.instructor {
+    grid-area: instructor;
+}
+
+.share {
+    grid-area: share;
+}
+
+.data-section {
+    margin: 0 0 6rem;
+}
+
+.instructor h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.share button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    border-radius: 4px;
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+}
+
+.share button span {
+    display: none;
+}
+
+.share .fb {
+    background-color: rgba(8, 102, 255, 1);
+    background-image: url('../images/SVGs/fb_icon.svg');
+}
+
+.share .fb:active {
+    background-color: rgba(8, 102, 255, 0.9);
+}
+
+.share .x {
+    background-color: rgba(51, 51, 51, 1);
+    background-image: url('../images/SVGs/x-icon.svg');
+}
+
+.share .x:active {
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+.share .whatsapp {
+    background-color: rgba(37, 211, 102, 1);
+    background-image: url('../images/SVGs/whatsapp-ft.svg');
+}
+
+.share .whatsapp:active {
+    background-color: rgba(37, 211, 102, 0.9);
+}
+
+.share .lnkdin {
+    background-color: rgba(10, 102, 194, 1);
+    background-image: url('../images/SVGs/linkedin.svg');
+}
+
+.share .lnkdin:active {
+    background-color: rgba(10, 102, 194, 0.9);
+}
+
+.fb span, .whatsapp span, .lnkdin span, .x span {
+    color: #FFF;
+}
+
+.data-section .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.data-section .section-title img {
+    width: auto;
+    height: 3.4rem;
+    margin-left: 1rem;
+}
+
+.data-section p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.data-section ul {
+    font-size: 1.5rem;
+    padding-right: 2.4rem;
+    line-height: 1.8;
+}
+
+.content summary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.6;
+}
+
+.content ul li {
+    margin-right: 1.6rem;
+}
+
+.data-section ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.instructor .instructor-name {
+    border-right: 3px solid #222;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.instructor-job {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* ***** Small Portrait Phones ***** */
+@media screen and (max-width: 430px) {
+    .course-header .course-title span {
+        font-size: 4.4rem;
+    }
+
+    .register a {
+        height: 4rem;
+        padding: 2rem 3rem;
+        font-size: 1.8rem;
+    }
+
+    .c-features {
+        gap: 1.4rem;
+    }
+
+    .data-section .section-title {
+        font-size: 2.2rem;
+    }
+
+    .data-section .section-title img {
+        height: 3.2rem;
+    }
+}
+
+/* ***** Landscape phones ***** */
+@media screen and (min-width: 576px) {
+    .course-header .course-title span {
+        font-size: 2.8rem;
+    }
+
+    .register a {
+        padding: 2.2rem 3rem;
+    }
+
+    .grid-layout {
+        padding: 2rem 3.4rem;
+    }
+
+    .data-section .section-title {
+        font-size: 2.6rem;
+    }
+
+    .data-section .section-title img {
+        height: 3.6rem;
+    }
+}
+
+/* ***** Tablets ***** */
+@media screen and (min-width: 768px) {
+    .course-header .course-title span {
+        font-size: 3.6rem;
+    }
+
+    .register a {
+        padding: 2.6rem 4rem;
+    }
+
+    .register a:hover {
+        background-color: rgba(189, 234, 9, 0.9);
+    }
+
+    .grid-layout {
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas: "right left"
+        "instructor instructor"
+        "share share";
+        column-gap: 8rem;
+        padding: 2rem 4rem;
+    }
+
+    .data-section {
+        margin: 0 0 8rem;
+    } 
+
+    .data-section .section-title {
+        font-size: 2.2rem;
+    }
+
+    .data-section .section-title img {
+        height: 3.2rem;
+    }
+
+    .share {
+        column-gap: 3rem;
+    }
+
+    .share button {
+        background-position: 10% 50%;
+        background-size: 20%;
+        height: 4rem;
+        width: 12rem;
+        padding: 0 0 0 3rem;
+        font-size: 1.5rem;
+    }
+
+    .share button span {
+        display: block;
+    }
+}
+
+/* ***** Laptops ***** */
+@media screen and (min-width: 992px) {
+    .course-header .course-title span {
+        font-size: 4.2rem;
+        font-weight: 700;
+    }
+
+    .register a {
+        font-size: 1.8rem;
+        padding: 2.6rem 3.8rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 10rem;
+        padding: 2rem 4.4rem;
+    }
+
+    .data-section {
+        margin: 0 0 10rem;
+    }
+
+    .data-section .section-title {
+        font-size: 2.6rem;
+    }
+
+    .data-section .section-title img {
+        height: 3.6rem;
+    }
+   
+    .share .fb:hover {
+        background-color: rgba(8, 102, 255, 0.9);
+    }
+
+    .share .x:hover {
+        background-color: rgba(51, 51, 51, 0.9);
+    }
+
+    .share .whatsapp:hover {
+        background-color: rgba(37, 211, 102, 0.9);
+    }
+    
+    .share .lnkdin:hover {
+        background-color: rgba(10, 102, 194, 0.9);
+    }
+}
+
+/* ***** Laptops and Desktops ***** */
+@media screen and (min-width: 1200px) {
+    .course-header .course-title span {
+        font-size: 5.2rem;
+    }
+
+    .register a {
+        font-size: 1.9rem;
+        padding: 2.8rem 4rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1.8fr 1fr;
+        column-gap: 13rem;
+        padding: 2rem 6rem;
+    }
+
+    .data-section .section-title {
+        font-size: 2.8rem;
+    }
+
+    .data-section .section-title img {
+        height: 3.8rem;
+    }
+}
+
+/* ***** Large Laptops and Desktops ***** */
+@media screen and (min-width: 1400px) {
+    .register a {
+        padding: 3rem 4rem;
+        font-size: 2rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20rem;
+    }
+
+    .data-section {
+        margin: 0 0 12rem;
+    }
+
+    .data-section .section-title {
+        font-size: 3rem;
+    }
+
+    .data-section .section-title img {
+        height: 4rem;
+    }
+}
